@@ -1,0 +1,56 @@
+#top {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 40px 40px;
+    text-transform: uppercase;
+    justify-items: center;
+    font-family : 'Poppins', sans-serif;
+}
+
+hr {
+    width: 700px;
+    color: lightgrey;
+}
+
+h1 {
+    color: rgb(215, 86, 86)
+}
+
+h2 {
+    font-size: small;
+}
+
+#teaser {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+#images img {
+    width: 300px;
+    height: 200px;
+}
+
+.boxed {
+    display: grid;
+    grid-template-columns: 100%;
+    border: 1px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    background-color: rgb(241, 119, 119);
+    color: white;
+    text-transform: uppercase;
+    justify-items: center;
+}
+
+a:hover {
+    color: blue;
+}
