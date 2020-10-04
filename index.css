@@ -1,3 +1,4 @@
+/* Use Poppins font unless overriden via another selector */
 body {
     font-family: 'Poppins', sans-serif; 
 }
@@ -12,7 +13,7 @@ h2 {
 }
 
 .large-image {
-    width: 900px;
+    max-width: 700px;
 }
 
 .home-image {
@@ -30,11 +31,13 @@ textarea {
     box-sizing: border-box;
 }
 
+/* Large width double line - page section seperator */
 .large-hr {
     width: 700px;
     color: lightgrey;
 }
 
+/* Small width double line - page section seperator */
 .small-hr {
     width: 300px;
     color: lightgrey;
@@ -97,14 +100,15 @@ textarea {
    
 }
 
+.action-button:hover {
+    color: red;
+}
+
 .centered {
     margin-left: auto;
     margin-right: auto;
 }
 
-.action-button:hover {
-    color: red;
-}
 
 /* Class for displaying large text seperator */
 .section-quote {
@@ -123,8 +127,7 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 
 /* Container for showing blog on left and article content on right */
@@ -132,9 +135,11 @@ textarea {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 120px;
+    margin-left: 120px;
 }
+
+/* Styling for blog page */
 
 .blog-container {
     display: flex;
@@ -156,6 +161,7 @@ textarea {
     width: 700px;
 }
 
+/* Date box for Blog section */
 .date-box {
     border: 1px;
     padding: 5px;
@@ -166,10 +172,7 @@ textarea {
     width: 180px
 }
 
-#send-message {
-    grid-column: 1;
-    grid-row: 4;
-}
+/*  Contact Us section */
 
 #contact-wrapper {
     display: grid;
@@ -193,6 +196,25 @@ textarea {
 #contact-form {
     grid-column: 1;
     grid-row: 2;
+}
+
+#send-message {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+textarea:focus {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+#contact-name.hover {
+    background-color: lightblue;
+    border-color: lightblue;
 }
 
 #contact-intro {
