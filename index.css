@@ -8,11 +8,15 @@ h1 {
 }
 
 h2 {
-    font-size: small;
+    font-size: smaller;
 }
 
-img {
-    height: 200px;
+.large-image {
+    width: 900px;
+}
+
+.home-image {
+    width: 800px;
 }
 
 a {
@@ -37,7 +41,23 @@ textarea {
 }
 
 .header {
-    font-size: large;
+    font-size: 18pt;
+    text-decoration: none;
+    color: black;
+}
+
+.header:hover {
+    color: red;
+}
+
+.title-header {
+    font-size: 24pt;
+    text-decoration: none;
+    color: hsl(224, 36%, 50%);
+}
+
+.title-header:hover {
+    color: red;
 }
 
 .banner {
@@ -62,6 +82,10 @@ textarea {
     text-transform: uppercase;
 }
 
+.small-image {
+    max-width: 300px;
+}
+
 .action-button {
     border: 1px;
     padding: 5px;
@@ -79,9 +103,10 @@ textarea {
 }
 
 .action-button:hover {
-    color: gray;
+    color: red;
 }
 
+/* Class for displaying large text seperator */
 .section-quote {
     display: flex;
     justify-content: center;
@@ -93,21 +118,42 @@ textarea {
     align-items: center;
 }
 
-.content-wrapper {
-    display: grid;
-    grid-gap: 80px;    
-    grid-template-columns: 100px 500px 300px 100px; 
-    font-size: smaller;
+/* Container for showing article on left and blog on right */
+.article-blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.article-content {
-	grid-column: 2 / 3;
-	grid-row: 1;
+/* Container for showing blog on left and article content on right */
+.blog-article-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.blog-content {
-	grid-column: 3 ;
-    grid-row: 1 / 3;
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.blog {
+    width: 300px;
+}
+
+.blog-only {
+    width: 900px;
+}
+
+.article {
+    width: 700px;
 }
 
 .date-box {
@@ -128,12 +174,12 @@ textarea {
 #contact-wrapper {
     display: grid;
     grid-gap: 5px;    
-    grid-template-columns: 400px 300px 250px;
+    grid-template-columns: 400px 300px 230px;
     grid-template-rows: 50px 75px 80px 60px;
     background-color: silver;
-    margin: 70px 70px;
+    margin: 60px 60px;
     padding-right: 150px; 
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
 #contact-heading {
