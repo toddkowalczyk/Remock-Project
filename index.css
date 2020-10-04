@@ -165,7 +165,7 @@ textarea {
 .date-box {
     border: 1px;
     padding: 5px;
-    background-color: silver;
+    background-color: rgb(74, 72, 72);
     color: white;
     text-transform: uppercase;
     text-align: center;
